@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favorite_bottom_navigation">Favorite</string>
+    <string name="news_bottom_navigation">News</string>
+    <string name="news_app">News App</string>
+    <string name="favorites">Favorites</string>
+    <string name="press_button_and_go_back">Press button and go back</string>
+    <string name="press_button_and_upload">press button and upload</string>
+    <string name="press_button_and_add_fav">press button and add fav</string>
+    <string name="news_source">News Source</string>
+    <string name="error">Bir Hata Oluştu</string>
+</resources>

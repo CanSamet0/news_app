@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.detail.NewsDetailFragment">
+
+
+    <ImageButton
+        android:id="@+id/backArrowButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/press_button_and_go_back"
+        android:src="@drawable/back_arrow"
+        android:background="@color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/uploadButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:contentDescription="@string/press_button_and_upload"
+        android:src="@drawable/upload"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/favoriteButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/favoriteButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/press_button_and_add_fav"
+        android:src="@drawable/favorite_icon"
+        android:background="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/newsImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/news_image_view_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backArrowButton" />
+
+    <TextView
+        android:id="@+id/newsHeadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newsImage" />
+
+    <ImageView
+
+        android:id="@+id/authorImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/author"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newsHeadline" />
+
+    <TextView
+        android:id="@+id/authorNameText"
+        android:layout_width="90dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:text="Author Name"
+        app:layout_constraintBottom_toBottomOf="@+id/authorImageView"
+        app:layout_constraintStart_toEndOf="@+id/authorImageView"
+        app:layout_constraintTop_toTopOf="@+id/authorImageView" />
+
+    <ImageView
+        android:id="@+id/dateImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/calender"
+        app:layout_constraintEnd_toStartOf="@+id/dateText"
+        app:layout_constraintTop_toBottomOf="@+id/newsHeadline" />
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="12.01.24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dateImageView" />
+
+    <TextView
+        android:id="@+id/newsDetailText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum, nisi ut dictum luctus, sapien neque semper tortor, in tincidunt lectus nunc quis nunc. Morbi tellus augue, vulputate ut dignissim at, accumsan id mi. Phasellus finibus placerat leo, aliquam ullamcorper nulla vestibulum sit amet. Pellentesque semper sagittis lorem, vel lacinia tortor scelerisque ut. Sed pretium elit efficitur tellus iaculis tempor. Fusce et arcu scelerisque, imperdiet est eget, vehicula tellus. Aenean eu ante nisi. Praesent sapien purus, fringilla nec ex a, eleifend luctus lacus. Aenean ipsum libero, ornare id euismod id, lacinia vitae elit. Ut lobortis luctus dui sed fermentum. Morbi hendrerit libero nec lorem consequat ultrices. In convallis lectus ac orci ullamcorper, id efficitur mauris tincidunt. Duis accumsan, metus quis dapibus faucibus, diam augue rhoncus odio, in pellentesque augue est at velit. Sed at ullamcorper nibh."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authorImageView" />
+
+    <Button
+        android:id="@+id/newsSourceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/news_source"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
